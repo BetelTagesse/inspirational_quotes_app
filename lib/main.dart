@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inspirational_quotes_app/pages/home_page.dart';
 import 'package:provider/provider.dart';
 
 import 'themes/theme_provider.dart';
@@ -13,13 +14,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: Provider.of(context).themeData,
-      home: const Text('Flutter Demo Home Page'),
+      debugShowCheckedModeBanner: false,
+      theme: Provider.of<ThemeProvider>(context).themeData,
+      home: HomePage(),
     );
   }
 }
