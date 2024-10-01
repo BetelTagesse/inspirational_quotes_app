@@ -16,7 +16,9 @@ class TopColumn extends StatelessWidget {
           const Icon(Icons.settings_backup_restore_rounded),
           const SizedBox(width: 10),
           // Display the formatted date
-          Text(formattedDate, style: TextStyle(fontSize: 16)),
+          Text(
+            formattedDate,
+          ),
           const Icon(Icons.share_sharp)
         ],
       ),
