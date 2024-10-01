@@ -15,12 +15,13 @@ class TopColumn extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           const Icon(Icons.settings_backup_restore_rounded),
-          const SizedBox(width: 10),
+
           // Display the formatted date
           Text(
             formattedDate,
             style: TextStyle(
-                fontSize: 36, color: Theme.of(context).colorScheme.tertiary),
+              fontSize: 36,
+            ),
           ),
           const Icon(Icons.share_sharp)
         ],
