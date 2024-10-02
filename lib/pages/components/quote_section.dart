@@ -9,9 +9,12 @@ class QuoteSection extends StatelessWidget {
       children: [
         Card(
           child: Card(
-            child: Card(child: Padding(padding: EdgeInsets.only(bottom: 10))),
-          ),
-        )
+              child: Card(
+                  child:
+                      // padding: EdgeInsets.only(bottom: 10),
+                      Text(
+                          'You know I am really stupid. For Years I have looked for the perfect pencil. I have found very good ones but never the perfect one. And all the time it was not the pencils but me.'))),
+        ),
       ],
     );
   }
