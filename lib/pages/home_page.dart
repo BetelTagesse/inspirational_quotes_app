@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inspirational_quotes_app/pages/components/quote_section.dart';
 import 'package:inspirational_quotes_app/pages/components/top_column.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,6 +11,7 @@ class HomePage extends StatelessWidget {
         body: Column(
       children: [
         TopColumn(),
+        QuoteSection(),
       ],
     ));
   }
