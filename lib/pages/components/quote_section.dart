@@ -1,35 +1,57 @@
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-// class QuoteSection extends StatelessWidget {
-//   const QuoteSection({super.key});
+class QuoteSection extends StatelessWidget {
+  final String quote;
+  final String author;
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Stack(
-//       children: [
-//         Card(
-//           elevation: 30,
-//           shadowColor: Colors.black,
-//           color: Colors.blue,
-//           child: Padding(
-//             padding: const EdgeInsets.only(bottom: 8),
-//             child: Card(
-//               elevation: 200,
-//               shadowColor: Colors.black,
-//               color: Colors.black12,
-//               child: SizedBox(
-//                 width: 300,
-//                 height: 200,
-//                 child: Card(
-//                     child: Text(
-//                         'You know I am really stupid. For Years I have looked for the perfect pencil. I have found very good ones but never the perfect one. And all the time it was not the pencils but me.')),
-//               ),
-//             ),
-//           ),
-//         )
-//       ],
-//     );
-//   }
-// }
+  const QuoteSection({
+    Key? key,
+    required this.quote,
+    required this.author,
+  }) : super(key: key);
 
-
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      alignment: Alignment.center,
+      children: [
+        // Shadow
+        Container(
+          margin: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            color: Theme.of(context).colorScheme.tertiary,
+            borderRadius: BorderRadius.circular(15),
+          ),
+          height: 250, // Adjust height as needed
+          width: 300, // Adjust width as needed
+        ),
+        // Quote card
+        Container(
+          padding: const EdgeInsets.all(15),
+          decoration: BoxDecoration(
+            // color: Colors.white,
+            borderRadius: BorderRadius.circular(15),
+          ),
+          height: 250, // Adjust height as needed
+          width: 300, // Adjust width as needed
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Text(
+                quote,
+                style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
+                overflow: TextOverflow.visible,
+              ),
+              SizedBox(height: 10),
+              Text(
+                author,
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}

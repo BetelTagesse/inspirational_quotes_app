@@ -11,7 +11,11 @@ class HomePage extends StatelessWidget {
         body: Column(
       children: [
         TopColumn(),
-        QuoteSection(),
+        QuoteSection(
+          quote:
+              'You know I am really stupid. For Years I have looked for the perfect pencil. I have found very good ones but never the perfect one. And all the time it was not the pencils but me.',
+          author: 'John cahil',
+        )
       ],
     ));
   }

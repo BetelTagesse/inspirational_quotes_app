@@ -8,7 +8,7 @@ class TopColumn extends StatelessWidget {
   Widget build(BuildContext context) {
     // Get the current date and format it inside the build method
     DateTime now = DateTime.now();
-    String formattedDate = DateFormat('MMMM-dd').format(now);
+    String formattedDate = DateFormat('MMM dd').format(now);
 
     return SafeArea(
       child: Row(
