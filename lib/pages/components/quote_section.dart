@@ -61,10 +61,10 @@ class QuoteSection extends StatelessWidget {
             height: 300, // Adjust height as needed
             width: 300, // Adjust width as needed
             padding: const EdgeInsets.all(16.0), // Padding inside the card
-            color: Colors.white, // Main card color
+            color: Theme.of(context).colorScheme.tertiary, // Main card color
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text(
                   quote,
