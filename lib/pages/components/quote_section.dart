@@ -23,31 +23,31 @@ class QuoteSection extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
           ),
           child: SizedBox(
-            height: 330, // Larger height for shadow effect
+            height: 315, // Larger height for shadow effect
             width: 300, // Adjust width as needed
           ),
         ),
         // Second shadow card (middle size)
         Card(
           color: Theme.of(context).colorScheme.tertiary,
-          elevation: 4,
+          elevation: 6,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
           ),
           child: SizedBox(
-            height: 320, // Medium height for shadow effect
+            height: 310, // Medium height for shadow effect
             width: 300, // Same width for aligned stacking
           ),
         ),
         // Third shadow card (smallest)
         Card(
           color: Theme.of(context).colorScheme.tertiary,
-          elevation: 4,
+          elevation: 8,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
           ),
           child: SizedBox(
-            height: 310, // Smallest shadow height
+            height: 305, // Smallest shadow height
             width: 300, // Same width
           ),
         ),
@@ -58,10 +58,14 @@ class QuoteSection extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
           ),
           child: Container(
+            decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.tertiary, // Main card color
+
+              borderRadius: BorderRadius.circular(15),
+            ),
             height: 300, // Adjust height as needed
             width: 300, // Adjust width as needed
             padding: const EdgeInsets.all(16.0), // Padding inside the card
-            color: Theme.of(context).colorScheme.tertiary, // Main card color
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
