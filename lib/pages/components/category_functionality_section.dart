@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CategoryNameSection extends StatelessWidget {
-  const CategoryNameSection({super.key});
+class CategoryFunctionalitySection extends StatelessWidget {
+  const CategoryFunctionalitySection({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 60,
+      width: double.infinity,
       child: Row(
         children: [
           Row(
