@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inspirational_quotes_app/pages/components/category_functionality_section.dart';
 
 class QuoteSection extends StatelessWidget {
   final String quote;
@@ -52,6 +53,7 @@ class QuoteSection extends StatelessWidget {
           ),
         ),
         // Main quote card
+
         Card(
           elevation: 10, // Stronger shadow for main content
           shape: RoundedRectangleBorder(
@@ -86,6 +88,7 @@ class QuoteSection extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                const CategoryFunctionalitySection(),
               ],
             ),
           ),
