@@ -37,8 +37,6 @@ class CategoryFunctionalitySection extends StatelessWidget {
                 ],
               ),
               Row(
-                mainAxisSize: MainAxisSize.min,
-                // mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   IconButton(
                     onPressed: () {},
