@@ -25,7 +25,7 @@ class QuoteSection extends StatelessWidget {
           ),
           child: SizedBox(
             height: 315, // Larger height for shadow effect
-            width: 300, // Adjust width as needed
+            width: 400, // Adjust width as needed
           ),
         ),
         // Second shadow card (middle size)
@@ -37,7 +37,7 @@ class QuoteSection extends StatelessWidget {
           ),
           child: SizedBox(
             height: 310, // Medium height for shadow effect
-            width: 300, // Same width for aligned stacking
+            width: 400, // Same width for aligned stacking
           ),
         ),
         // Third shadow card (smallest)
@@ -49,7 +49,7 @@ class QuoteSection extends StatelessWidget {
           ),
           child: SizedBox(
             height: 305, // Smallest shadow height
-            width: 300, // Same width
+            width: 400, // Same width
           ),
         ),
         // Main quote card
@@ -65,8 +65,8 @@ class QuoteSection extends StatelessWidget {
 
               borderRadius: BorderRadius.circular(15),
             ),
-            height: 300, // Adjust height as needed
-            width: 300, // Adjust width as needed
+            height: 300,
+            width: 400,
             padding: const EdgeInsets.all(16.0), // Padding inside the card
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

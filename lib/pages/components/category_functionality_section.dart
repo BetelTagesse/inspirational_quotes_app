@@ -17,14 +17,14 @@ class CategoryFunctionalitySection extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
         ),
         height: 60,
-        width: 300,
+        width: 400,
         // padding: const EdgeInsets.all(6.0),
         child: Center(
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            // mainAxisSize: MainAxisSize.max,
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   IconButton(
                     onPressed: () {},
@@ -37,7 +37,8 @@ class CategoryFunctionalitySection extends StatelessWidget {
                 ],
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
+                // mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   IconButton(
                     onPressed: () {},
