@@ -18,12 +18,13 @@ class CategoryFunctionalitySection extends StatelessWidget {
         ),
         height: 60,
         width: 300,
-        padding: const EdgeInsets.all(6.0),
+        // padding: const EdgeInsets.all(6.0),
         child: Center(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   IconButton(
                     onPressed: () {},
@@ -36,6 +37,7 @@ class CategoryFunctionalitySection extends StatelessWidget {
                 ],
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
                     onPressed: () {},
