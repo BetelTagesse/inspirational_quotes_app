@@ -70,7 +70,8 @@ class QuoteSection extends StatelessWidget {
             padding: const EdgeInsets.all(16.0), // Padding inside the card
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisSize: MainAxisSize.max,
               children: [
                 Text(
                   quote,

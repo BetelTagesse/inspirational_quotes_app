@@ -6,14 +6,11 @@ class CollectionsHeading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        Row(
-          children: [
-            Text(
-              'Collections',
-              style: TextStyle(color: Theme.of(context).colorScheme.secondary),
-            ),
-          ],
+        Text(
+          'Collections',
+          style: TextStyle(color: Theme.of(context).colorScheme.primary),
         ),
         Row(
           children: [
