@@ -9,7 +9,10 @@ class CollectionsHeading extends StatelessWidget {
       children: [
         Row(
           children: [
-            Text('Collections'),
+            Text(
+              'Collections',
+              style: TextStyle(color: Theme.of(context).colorScheme.secondary),
+            ),
           ],
         ),
         Row(
