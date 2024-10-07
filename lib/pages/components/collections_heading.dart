@@ -5,21 +5,24 @@ class CollectionsHeading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [
-        Text(
-          'Collections',
-          style: TextStyle(color: Theme.of(context).colorScheme.primary),
-        ),
-        Row(
-          children: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.line_style)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.line_style)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.folder))
-          ],
-        )
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            'Collections',
+            style: TextStyle(color: Theme.of(context).colorScheme.primary),
+          ),
+          Row(
+            children: [
+              IconButton(onPressed: () {}, icon: Icon(Icons.line_style)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.line_style)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.folder))
+            ],
+          )
+        ],
+      ),
     );
   }
 }
