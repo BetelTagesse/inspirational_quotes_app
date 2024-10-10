@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:inspirational_quotes_app/themes/dark_mode.dart';
-import 'package:provider/provider.dart';
+import 'package:inspirational_quotes_app/themes/light_mode.dart';
 
 class ThemeProvider extends ChangeNotifier {
   ThemeData _themeData = darkMode;
